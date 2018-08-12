@@ -1,8 +1,9 @@
-import React, { Component } from "react";
+import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 
 class MySuperCoolComponent extends Component {
   handleClick = () => {
-    console.log("Click!");
+    // console.log('Click!');
   };
 
   render() {
@@ -14,5 +15,10 @@ class MySuperCoolComponent extends Component {
     );
   }
 }
+
+MySuperCoolComponent.propTypes = {
+  color: PropTypes.string,
+  children: PropTypes.element.isRequired,
+};
 
 export default MySuperCoolComponent;

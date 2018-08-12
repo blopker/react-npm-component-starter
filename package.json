@@ -8,7 +8,8 @@
     "lib": "babel src/lib -d lib --copy-files",
     "lib:watch": "babel src/lib --watch --out-dir lib --copy-files",
     "docs": "webpack --mode production",
-    "docs:watch": "webpack-dev-server --mode development"
+    "docs:watch": "webpack-dev-server --mode development",
+    "test": "eslint ./src/**/*.jsx && jest --testPathIgnorePatterns src"
   },
   "keywords": [],
   "license": "MIT",
@@ -23,21 +24,30 @@
     "@babel/plugin-proposal-object-rest-spread": "^7.0.0-rc.1",
     "@babel/preset-env": "^7.0.0-rc.1",
     "@babel/preset-react": "^7.0.0-rc.1",
+    "babel-core": "^7.0.0-bridge.0",
+    "babel-eslint": "^8.2.6",
+    "babel-jest": "^23.4.2",
     "babel-loader": "^8.0.0-beta.4",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
     "concurrently": "^3.5.1",
     "css-loader": "^1.0.0",
+    "eslint": "^5.3.0",
+    "eslint-plugin-babel": "^5.1.0",
+    "eslint-plugin-jest": "^21.21.0",
+    "eslint-plugin-react": "^7.10.0",
     "html-webpack-plugin": "^3.2.0",
+    "jest": "^23.5.0",
     "react": "^16.3.2",
     "react-dom": "^16.3.2",
-    "style-loader": "^0.222.1",
+    "react-test-renderer": "^16.4.2",
+    "style-loader": "^0.22.1",
     "webpack": "^4.6.0",
     "webpack-cli": "^3.1.0",
     "webpack-dev-server": "^3.1.3"
   },
-  "author": "Markus Englund <markus.s.englund@gmail.com>",
-  "homepage": "https://github.com/yogaboll/react-npm-component-starter",
   "repository": {
     "type": "git",
-    "url": "git@github.com:yogaboll/react-npm-component-starter.git"
+    "url": "git@github.com:blopker/react-npm-component-starter.git"
   }
 }
