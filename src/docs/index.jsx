@@ -1,16 +1,8 @@
-import React from 'react';
-import { render } from 'react-dom';
-import Link from '../../lib/Link';
-import './styles.css';
+// Import React, ReactDOM and the DummyComponent.
+import React from 'react'
+import ReactDOM from 'react-dom'
+import { Main } from './main.jsx'
+import './styles.scss'
 
-function Demo() {
-  return (
-    <div>
-      <h1>Demo with examples of the component, hello </h1>
-      <br/>
-      <Link page='http://www.facebook.com'>Evil</Link>
-    </div>
-  );
-}
-
-render(<Demo />, document.getElementById('app'));
+const root = document.querySelector('#app')
+ReactDOM.render(<Main />, root)
